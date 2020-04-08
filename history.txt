@@ -1,0 +1,304 @@
+    1  sudo apt update
+    2  curl https://get.docker.com | sudo bash
+    3  sudo usermod -aG docker $(whoami)
+    4  curl http://127.0.0.1:5000/
+    5  ls
+    6  ls app1/
+    7  vim app1/
+    8  vim app.py
+    9  vim app1/app.py 
+   10  curl localhost:5000
+   11  tree
+   12  cd app1/
+   13  tree
+   14  ls
+   15  curl localhost:5000
+   16  docker ps
+   17  docker network
+   18  docker network ls
+   19  sudo apt install tree
+   20  mkdir app1
+   21  cd app1/
+   22  touch app.py
+   23  python
+   24  vim app.py 
+   25  pip3 install virtualenv
+   26  install pip3
+   27  sudo apt install pip
+   28  sudo apt install pip3
+   29  sudo apt install python3
+   30  sudo apt install python3-venv
+   31  ls
+   32  python3 -m venv venv
+   33  ls
+   34  source ./venv/bin/activate
+   35  pip install Flask
+   36  ls
+   37  vim app.py
+   38  cat app.py 
+   39  ls
+   40  vim app.py 
+   41  python app.py
+   42  vim app.py 
+   43  python app.py
+   44  python
+   45  flask run
+   46  ls
+   47  cd ..
+   48  ls
+   49  ls -a
+   50  cd app1/
+   51  vim Dockerfile
+   52  pip freeze
+   53  vim requirements.txt
+   54  vim Dockerfile 
+   55  docker build -t flask-animal
+   56  docker build -t flask-blog
+   57  docker build --help
+   58  docker build -t animal-app .
+   59  pip Dockerfile 
+   60  vim Dockerfile 
+   61  docker build -t animal-app .
+   62  docker ps
+   63  docker ps -a
+   64  docker images
+   65  docker run -d -p 5000:5000 animal-app animal-app
+   66  docker run -d -p 5000:5000 animal-app flask-blog
+   67  docker run -d -p 5000:5000 flask-blog animal-app
+   68  docker logs flask-blog
+   69  docker ps
+   70  docker ps  -a
+   71  docker fun -d -p 5000:5000 --name animal-app flask-blog
+   72  docker run -d -p 5000:5000 --name animal-app flask-blog
+   73  docker run -d -p 5000:5000 --name flask-blog flask-blog
+   74  vim Dockerfile 
+   75  docker ps
+   76  docker ps -a
+   77  cat requirements.txt 
+   78  docker-compose
+   79  docker compose
+   80  docker --help
+   81  docker-compose --version
+   82  sudo apt update
+   83  sudo apt install -y curl jq
+   84  version=$(curl -s https://api.github.com/repos/docker/compose/releases/latest | jq -r '.tag_name')
+   85  sudo curl -L "https://github.com/docker/compose/releases/download/${version}/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+   86  sudo chmod +x /usr/local/bin/docker-compose
+   87  docker-compose --version
+   88  docker-compose ps
+   89  flask run
+   90  touch home.html
+   91  vim home.html
+   92  vim app.py 
+   93  vi app.py 
+   94  vim app.py 
+   95  flask run
+   96  vim app.py 
+   97  run flask app
+   98  run flask-app
+   99  flask run
+  100  vim app.py
+  101  flask run
+  102  vim app.py
+  103  flask run
+  104  vim app.py
+  105  flask run
+  106  ls
+  107  mkdir applicaiton/templates
+  108  mkdir application
+  109  cd application/
+  110  mkdir templates
+  111  cd ..
+  112  mv home.html application/templates/
+  113  cd application/templates/
+  114  flask run
+  115  cd ..
+  116  flask run
+  117  ls
+  118  vim app.py
+  119  curl localhost:5000
+  120  docker ps
+  121  docker ps -a
+  122  ls
+  123  cd app1
+  124  ls
+  125  source ./venv/bin/activate
+  126  deactivate 
+  127  tree
+  128  clear
+  129  source ./venv/bin/activate
+  130  tree
+  131  clear
+  132  flask run
+  133  ls
+  134  cd application/
+  135  ls
+  136  mv -r templates/ ..
+  137  mv templates/ ..
+  138  ls
+  139  cd ..
+  140  ls
+  141  rm application/
+  142  rm -r application/
+  143  ls
+  144  flask run
+  145  vim Dockerfile 
+  146  docker network
+  147  docker network ls
+  148  docker images
+  149  docker rmi 3c37001430a7        
+  150  docker ps -a
+  151  docker system prune
+  152  docker ps
+  153  docker ps -a
+  154  docker images
+  155  docker rmi python
+  156  docker rmi d400634b7be2
+  157  docker images
+  158  docker images -a
+  159  ls
+  160  vim Dockerfile 
+  161  docker build -t flask-blog
+  162  docker build -t flask-blog .
+  163  vim requirements.txt 
+  164  docker build -t flask-blog .
+  165  docker ps
+  166  docker ps -a
+  167  docker images
+  168  docker run -d -p 5000:5000 flask-blog flask-blog
+  169  docker ps
+  170  docker ps -a
+  171  docker run -d -p 5000:5000 flask-blog flask-blog
+  172  docker ps
+  173  docker images
+  174  docker ps
+  175  docker ps -a
+  176  history
+  177  docker run
+  178  docker images
+  179  docker ps
+  180  docker logs flask-blog
+  181  docker logs
+  182  docker logs --help
+  183  docker ps -a
+  184  docker rm hardcore_buck
+  185  docker -s
+  186  docker ps -a
+  187  docker rm adoring_moore
+  188  docker ps -a
+  189  docker run -d -p 5000:5000 flask-blog flask-blog
+  190  docker ps
+  191  docker ps -a
+  192  docker rm nostalgic_bose
+  193  docker ps -a
+  194  docker rm objective_sammet
+  195  docker ps
+  196  docker run -d -p 5000:5000 --name flask-blog flask-blog
+  197  docker rm flask-blog
+  198  docker rm objective_sammet
+  199  docker ps -a
+  200  docker run -d -p 5000:5000 --name flask-blog flask-blog
+  201  docker ps
+  202  docker logs
+  203  docker logs .
+  204  docker logs --help
+  205  sudo systemctl flask-app
+  206  docker logs --details
+  207  docker logs flask-app
+  208  docker run -d -p 5000:5000 --name flask-blog flask-blog
+  209  docker ps -a
+  210  docker logs flask-blog
+  211  docker ps
+  212  docker ps -a
+  213  docker system prune
+  214  docker ps -a
+  215  docker images
+  216  docker rmi -f $(docker images -qa)
+  217  docker images
+  218  docker images -a
+  219  docker run -d -p 5000:5000 --name flask-blog flask-blog
+  220  docker build -t flask-blog .
+  221  docker run -d -p 5000:5000 --name flask-blog flask-blog
+  222  docker ps
+  223  docker ps -a
+  224  docker logs flask-blog
+  225  vim Dockerfile 
+  226  docker ps
+  227  docker ps -a
+  228  docker logs 1bb87cbef887
+  229  docker logs 6ccf8642c28f
+  230  docker logs 3620562bdb40
+  231  history
+  232  git clone https://github.com/dreops/linux.git
+  233  sudo apt install git
+  234  git clone https://github.com/dreops/linux.git
+  235  ls
+  236  cd linux
+  237  ls
+  238  tree
+  239  cd ..
+  240  ls
+  241  cd app1/
+  242  ls
+  243  tree
+  244  history
+  245  ls
+  246  touch .gitignore
+  247  rm .gitignore 
+  248  ls
+  249  cd ..
+  250  cd linux/
+  251  vim .gitignore
+  252  cd ..
+  253  cd linux/
+  254  tree
+  255  cd ..
+  256  cd app1/
+  257  tree
+  258  tree -I 'venv | __pycache__'
+  259  tree -I 'venv|__pycache__'
+  260  cd ..
+  261  cd linux
+  262  vim .git
+  263  vim .gitignore 
+  264  cd ..
+  265  mv app1 linux/docker/animal
+  266  ls
+  267  tree -I 'venv|__pycache__'
+  268  cd linux/
+  269  ls
+  270  cd docker/
+  271  ls
+  272  cd animal/
+  273  ls
+  274  mv app.py Dockerfile __pycache__/ requirements.txt templates/ venv/ my-first-attempt/app1
+  275  mkdir first-attempt/app1
+  276  mkdir first-attempt
+  277  mkdir first-attempt/app1
+  278  tree
+  279  clear
+  280  tree I '__pycache__|venv|'
+  281  tree -I '__pycache__|venv|'
+  282  tree -I '__pycache__|venv'
+  283  mv app.py Dockerfile __pycache__/ requirements.txt templates/ venv/ my-first-attempt/app1
+  284  mv app.py Dockerfile __pycache__/ requirements.txt templates/ venv/ first-attempt/app1
+  285  tree -I '__pycache__|venv'
+  286  cd ..
+  287  ls
+  288  cd ..
+  289  ls
+  290  mv requestsTask/ linux/docker/animal/
+  291  tree -I 'venv'
+  292  tree -I 'venv' -a
+  293  cd linux/
+  294  git status
+  295  git add .
+  296  git push -m "Animal 1st attempt with my own code, 2nd attempt copying Luke's solution with identical filenames and tree"
+  297  git commit -m "Animal 1st attempt with my own code, 2nd attempt copying Luke's solution with identical filenames and tree"
+  298  git config --global user.name "dreops"
+  299  git config --global user.email "dreops@andreasandrews.com"
+  300  git push
+  301  git status
+  302  tree -I 'venv'
+  303  history
+  304  history > history.txt

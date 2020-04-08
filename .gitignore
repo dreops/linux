@@ -1,0 +1,5 @@
+**/__pycache__/
+*.pyc
+/venv/
+.vscode
+/docker/animal/first-attempt/app1/venv/
